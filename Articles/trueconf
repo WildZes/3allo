@@ -1,9 +1,9 @@
 Article: https://trueconf.ru/webrtc.html  
 Highlights:  
-- SDP-пакет;
-- STUN-сервер;
-- TURN-сервера;
-- onicecandidate;
+- SDP-пакет; #https://ru.wikipedia.org/wiki/Session_Description_Protocol
+- STUN-сервер; #https://voxlink.ru/kb/asterisk-configuration/obzor-protokolov-stun-turn-i-ice-ih-principy-raboty-s-nat-i-ispolzovanie-dlja-voip/
+- TURN-сервера; #https://voxlink.ru/kb/asterisk-configuration/obzor-protokolov-stun-turn-i-ice-ih-principy-raboty-s-nat-i-ispolzovanie-dlja-voip/
+- onicecandidate; #https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/icecandidate_event
 - использованию современных видео- и аудиокодеков (https://trueconf.ru/webrtc.html#s-05);
 - DTLS и SRTP;
 - технология SVC добавлена как часть реализации кодеков VP9 и AV1;
@@ -11,3 +11,6 @@ Highlights:
 - в стандарт вошли VP8 и H.264, в то время как в необязательные видеокодеки попали H.265, VP9, AV1;
 - BigBlueButton – это свободное программное обеспечение для видеоконференцсвязи;
 - На стороне браузера задействованы другие web технологии -- низкоуровневый WebAssembly и WebSocket.
+
+Ideas:
+- I'd like to use webrtc for MVP and build it based on simplisity with understanding of resource limits.
