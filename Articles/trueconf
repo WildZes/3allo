@@ -4,13 +4,16 @@ Highlights:
 - STUN-сервер; #https://voxlink.ru/kb/asterisk-configuration/obzor-protokolov-stun-turn-i-ice-ih-principy-raboty-s-nat-i-ispolzovanie-dlja-voip/
 - TURN-сервера; #https://voxlink.ru/kb/asterisk-configuration/obzor-protokolov-stun-turn-i-ice-ih-principy-raboty-s-nat-i-ispolzovanie-dlja-voip/
 - onicecandidate; #https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/icecandidate_event
-- использованию современных видео- и аудиокодеков (https://trueconf.ru/webrtc.html#s-05);
-- DTLS и SRTP;
+- использованию современных видео- и аудиокодеков (https://trueconf.ru/webrtc.html#s-05); #deffinetly not iSAC, more likely it may be OPUS or G.711/G.722
+- DTLS и SRTP; #https://stackoverflow.com/questions/31421909/difference-between-dtls-srtp-and-srtp-packets-send-over-dtls-connections
 - технология SVC добавлена как часть реализации кодеков VP9 и AV1;
 - обязательные кодеки (Opus и G.711) и дополнительные (G.722, iLBC, iSAC);
 - в стандарт вошли VP8 и H.264, в то время как в необязательные видеокодеки попали H.265, VP9, AV1;
-- BigBlueButton – это свободное программное обеспечение для видеоконференцсвязи;
-- На стороне браузера задействованы другие web технологии -- низкоуровневый WebAssembly и WebSocket.
+- BigBlueButton – это свободное программное обеспечение для видеоконференцсвязи; #https://bigbluebutton.org/ has a lot of common with idea of deligere and 3allo, but still there are a lot of work to do, have to take a look possibilities of using BigBlueButton
+- На стороне браузера задействованы другие web технологии -- низкоуровневый WebAssembly и WebSocket. #https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts and https://www.techtarget.com/whatis/definition/WebSocket
 
 Ideas:
-- I'd like to use webrtc for MVP and build it based on simplisity with understanding of resource limits.
+- I'd like to use webrtc for MVP and build it based on simplisity with understanding of resource limits;
+- For the simplicity puprose, there will be no video, so no video codecs will be used;
+- Shame on me for my attitude to learning while where studying in University, but what the point to learn TCP/IP protocol without working (programming or administrating) with this protocol;
+- It is interesting to understand possibilities of using BigBlueButton to develope MVP and ideas of mine.
